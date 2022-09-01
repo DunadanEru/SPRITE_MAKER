@@ -8,7 +8,7 @@ const OUTPUT_DIR = "dist";
 const INPUTT_DIR = "src";
 const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
 const BRIGHTNESS_MULT = 1.6;
-
+const PREFIX = 'digi_tournament_';
 const SPRITE_SIZE = {
   w: 48,
   h: 48,
@@ -136,7 +136,7 @@ loadImage(`${INPUTT_DIR}/spriteTournament.png`).then((image) => {
         y: SPRITE_HEIGHT + i * SPRITE_SIZE.h,
       };
       let fileName = file.split('.')[0];
-      let selector = `sprite_file_${fileName}`;
+      let selector = `${PREFIX}${fileName}`;
       OUTPUT_CSS_CONTENT += createCSSChunk(selector, cssPosition);
       OUTPUT_CSS_COMMENT += `ID:${fileName} `;
       OUTPUT_HTML_CONTENT += createHTMLChunk(selector);
