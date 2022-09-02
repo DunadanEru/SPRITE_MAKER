@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.9.3"
+    "canvas": "^2.9.3",
+    "super-expressive": "^1.4.1"
   }
 }
