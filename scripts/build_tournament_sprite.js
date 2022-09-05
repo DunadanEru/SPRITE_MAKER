@@ -1,35 +1,39 @@
 const fs = require("fs");
 const { createCanvas, loadImage, createImageData } = require("canvas");
 
-const {createCSSChunk, createHTMLChunk} = require('./utils/createCSSChunk')
+const { createCSSChunk, createHTMLChunk } = require("./utils/createCSSChunk");
+const createDate = require("./utils/createDate");
+
 // https://github.com/Automattic/node-canvas
 
-const OUTPUT_DIR = "dist";
-const INPUTT_DIR = "src";
+const OUTPUT_DIR = "dist/TOURNAMENTS";
+const INPUTT_DIR = "src/TOURNAMENTS";
 const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
-const BRIGHTNESS_MULT = 1.6;
-const PREFIX = 'digi_tournament_';
+const BRIGHTNESS_MULT = 2.5;
+const PREFIX = "digi_tournament_";
 const SPRITE_SIZE = {
   w: 48,
   h: 48,
 };
 
+const SPRITE_ACTUAL_SIZE = {
+  w: SPRITE_SIZE.w / 2,
+  h: SPRITE_SIZE.h / 2,
+};
 
-let CSS_FILE_NAME = `style.css`;
+let CSS_FILE_NAME = `tournaments.css`;
 let HTML_FILE_NAME = `index.html`;
-let IMAGE_FILE_NAME = `img.png`;
+let IMAGE_FILE_NAME = `spriteTournament.png`;
 
 let OUTPUT_CSS_FILE_PATH = `${OUTPUT_DIR}/${CSS_FILE_NAME}`;
 let OUTPUT_HTML_FILE_PATH = `${OUTPUT_DIR}/${HTML_FILE_NAME}`;
 let OUTPUT_IMAGE_FILE_PATH = `${OUTPUT_DIR}/${IMAGE_FILE_NAME}`;
 
-
 let OUTPUT_CSS_CONTENT = ``;
 
-let DATE = new Date();
-DATE.toISOString().split('T')[0];
+let DATE = createDate();
 
-let OUTPUT_CSS_COMMENT = `${DATE}\n========\n`;
+let OUTPUT_CSS_COMMENT = `/*============ ${DATE} ============*/\n`;
 
 let OUTPUT_HTML_START = (imgURL, cssURL) => {
   return `<!DOCTYPE html>
@@ -63,12 +67,11 @@ let OUTPUT_HTML_START = (imgURL, cssURL) => {
   </head>
   <body>
   <main class='row'>\n`;
-}
+};
 
 let OUTPUT_HTML_CONTENT = ``;
 
-let OUTPUT_HTML_END = 
-`</main>
+let OUTPUT_HTML_END = `</main>
 </body>
 </html>`;
 
@@ -121,40 +124,67 @@ loadImage(`${INPUTT_DIR}/spriteTournament.png`).then((image) => {
   CTX.drawImage(image, 0, 0, image.width, image.height);
 
   FILES.forEach((file, i) => {
-    loadImage(`${INPUTT_DIR_FILES_TO_ADD}/${file}`).then((image) => {
-      for (let g = 0; g < STEP_X; g++) {
-        let position = {
-          x: g * SPRITE_SIZE.w,
-          y: SPRITE_HEIGHT + i * SPRITE_SIZE.h,
+    loadImage(`${INPUTT_DIR_FILES_TO_ADD}/${file}`)
+      .then((image) => {
+        for (let g = 0; g < STEP_X; g++) {
+          let position = {
+            x: g * SPRITE_SIZE.w,
+            y: SPRITE_HEIGHT + i * SPRITE_SIZE.h,
+          };
+          let light = g === 0 || g === 2 ? true : false;
+          prepareSprite(image, CTX, position, light);
+        }
+
+        let cssPosition = {
+          x: 0,
+          y: SPRITE_HEIGHT / 2 + i * SPRITE_ACTUAL_SIZE.h,
         };
-        let light = g === 0 || g === 2 ? true : false;
-        prepareSprite(image, CTX, position, light);
-      }
-      
-      let cssPosition = {
-        x: 0,
-        y: SPRITE_HEIGHT + i * SPRITE_SIZE.h,
-      };
-      let fileName = file.split('.')[0];
-      let selector = `${PREFIX}${fileName}`;
-      OUTPUT_CSS_CONTENT += createCSSChunk(selector, cssPosition);
-      OUTPUT_CSS_COMMENT += `ID:${fileName} `;
-      OUTPUT_HTML_CONTENT += createHTMLChunk(selector);
-    }).then(()=>{
-      let cssContent = `${OUTPUT_CSS_CONTENT}\n /*${OUTPUT_CSS_COMMENT}*/`
-      fs.writeFileSync(OUTPUT_CSS_FILE_PATH, cssContent)
+        let fileName = file.split(".")[0];
+        let selector = `${PREFIX}${fileName}`;
+        let cssSelector = `${PREFIX}${fileName}:before`;
 
-      let htmlContent = `${OUTPUT_HTML_START(IMAGE_FILE_NAME, CSS_FILE_NAME)}${OUTPUT_HTML_CONTENT}${OUTPUT_HTML_END}`
-      fs.writeFileSync(OUTPUT_HTML_FILE_PATH, htmlContent)
+        OUTPUT_CSS_CONTENT += createCSSChunk(cssSelector, cssPosition);
+        OUTPUT_CSS_COMMENT += `/*ID:${fileName}*/\n`;
+        OUTPUT_HTML_CONTENT += createHTMLChunk(selector);
+      })
+      .then(() => {
+        let cssContent = `${OUTPUT_CSS_COMMENT}${OUTPUT_CSS_CONTENT}${OUTPUT_CSS_COMMENT}`;
+        fs.writeFileSync(OUTPUT_CSS_FILE_PATH, cssContent);
 
-    });
-
-    
+        let htmlContent = `${OUTPUT_HTML_START(
+          IMAGE_FILE_NAME,
+          CSS_FILE_NAME
+        )}${OUTPUT_HTML_CONTENT}${OUTPUT_HTML_END}`;
+        fs.writeFileSync(OUTPUT_HTML_FILE_PATH, htmlContent);
+      });
   });
 
-  const STREAM = CANVAS.createPNGStream();
+  const STREAM = CANVAS.createPNGStream({
+    /** Specifies the ZLIB compression level. Defaults to 6. */
+    compressionLevel: 9,
+    /**
+     * Any bitwise combination of `PNG_FILTER_NONE`, `PNG_FITLER_SUB`,
+     * `PNG_FILTER_UP`, `PNG_FILTER_AVG` and `PNG_FILTER_PATETH`; or one of
+     * `PNG_ALL_FILTERS` or `PNG_NO_FILTERS` (all are properties of the canvas
+     * instance). These specify which filters *may* be used by libpng. During
+     * encoding, libpng will select the best filter from this list of allowed
+     * filters. Defaults to `canvas.PNG_ALL_FITLERS`.
+     */
+    filters: CANVAS.PNG_ALL_FILTERS,
+    /**
+     * _For creating indexed PNGs._ The palette of colors. Entries should be in
+     * RGBA order.
+     */
+    // palette: undefined,
+    /**
+     * _For creating indexed PNGs._ The index of the background color. Defaults
+     * to 0.
+     */
+    // backgroundIndex: 0,
+    /** pixels per inch */
+    // resolution: 72,
+  });
+
   STREAM.pipe(OUTPUT_FILE);
   STREAM.on("finish", () => console.log("The PNG file was created."));
-
-
 });

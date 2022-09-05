@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build_tournaments": "node build_tournament_sprite"
+    "build_tournaments": "node scripts/build_tournament_sprite.js",
+    "build_sport_icons": "node scripts/build_sport_sprite.js"
   },
   "author": "",
   "license": "ISC",
