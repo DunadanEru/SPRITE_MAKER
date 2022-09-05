@@ -16,7 +16,7 @@ function createCSSChunk(selector, position) {
 function createHTMLChunk(selector) {
   let _s = selector || "class";
 
-  let chunk = `<div class=${_s}></div>\n`;
+  let chunk = `<div class="${_s}"></div>\n`;
   return chunk;
 }
 

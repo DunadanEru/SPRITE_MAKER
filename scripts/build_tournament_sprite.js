@@ -9,7 +9,7 @@ const createDate = require("./utils/createDate");
 const OUTPUT_DIR = "dist/TOURNAMENTS";
 const INPUTT_DIR = "src/TOURNAMENTS";
 const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
-const BRIGHTNESS_MULT = 2.5;
+const BRIGHTNESS_MULT = 1.4;
 const PREFIX = "digi_tournament_";
 const SPRITE_SIZE = {
   w: 48,
@@ -17,9 +17,11 @@ const SPRITE_SIZE = {
 };
 
 const SPRITE_ACTUAL_SIZE = {
-  w: SPRITE_SIZE.w / 2,
-  h: SPRITE_SIZE.h / 2,
+  w: 24,
+  h: 24,
 };
+
+const STEP_X = 4;
 
 let CSS_FILE_NAME = `tournaments.css`;
 let HTML_FILE_NAME = `index.html`;
@@ -47,15 +49,15 @@ let OUTPUT_HTML_START = (imgURL, cssURL) => {
       body{
         background: #2a2a2a;
       }
-      div {
+      div:before {
         content: '';
         display: block;
         background-image: url(${imgURL});
-        background-size: 96px;
+        background-size: ${SPRITE_ACTUAL_SIZE.w * STEP_X}px;
         background-position-x: 0px;
         background-position-y: 0px;
-        width: 24px;
-        height: 24px;
+        width: ${SPRITE_ACTUAL_SIZE.w}px;
+        height: ${SPRITE_ACTUAL_SIZE.h}px;
       }
       .row{
         display: flex;
@@ -74,11 +76,6 @@ let OUTPUT_HTML_CONTENT = ``;
 let OUTPUT_HTML_END = `</main>
 </body>
 </html>`;
-
-const STEP_X = 4;
-
-let CANVAS;
-let CTX;
 
 let FILES = fs.readdirSync(INPUTT_DIR_FILES_TO_ADD);
 let FILES_LENGTH = FILES.length;
@@ -160,29 +157,9 @@ loadImage(`${INPUTT_DIR}/spriteTournament.png`).then((image) => {
   });
 
   const STREAM = CANVAS.createPNGStream({
-    /** Specifies the ZLIB compression level. Defaults to 6. */
     compressionLevel: 9,
-    /**
-     * Any bitwise combination of `PNG_FILTER_NONE`, `PNG_FITLER_SUB`,
-     * `PNG_FILTER_UP`, `PNG_FILTER_AVG` and `PNG_FILTER_PATETH`; or one of
-     * `PNG_ALL_FILTERS` or `PNG_NO_FILTERS` (all are properties of the canvas
-     * instance). These specify which filters *may* be used by libpng. During
-     * encoding, libpng will select the best filter from this list of allowed
-     * filters. Defaults to `canvas.PNG_ALL_FITLERS`.
-     */
     filters: CANVAS.PNG_ALL_FILTERS,
-    /**
-     * _For creating indexed PNGs._ The palette of colors. Entries should be in
-     * RGBA order.
-     */
-    // palette: undefined,
-    /**
-     * _For creating indexed PNGs._ The index of the background color. Defaults
-     * to 0.
-     */
-    // backgroundIndex: 0,
-    /** pixels per inch */
-    // resolution: 72,
+    resolution: 72,
   });
 
   STREAM.pipe(OUTPUT_FILE);
