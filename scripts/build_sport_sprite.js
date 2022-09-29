@@ -7,6 +7,7 @@ const createDate = require("./utils/createDate");
 // https://github.com/Automattic/node-canvas
 
 const OUTPUT_DIR = "dist/SPORT_ICONS";
+
 const INPUTT_DIR = "src/SPORT_ICONS";
 const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
 const BRIGHTNESS_MULT = 1.6;
@@ -15,6 +16,7 @@ const SPRITE_SIZE = {
   w: 80,
   h: 80,
 };
+const SPRITE_DEFAULT_ICONST_LENGTH = 1;
 
 const SPRITE_OFFSET = SPRITE_SIZE.h * 20;
 
@@ -70,7 +72,7 @@ let OUTPUT_HTML_START = (imgURL, cssURL) => {
       [class*='imgSpr']{
         overflow:hidden; text-indent:-999px;
         background-image: url(${imgURL});
-        background-position: 0 -816px;
+        background-position: 0 0;
         background-size:100%;
         width: ${SPRITE_ACTUAL_SIZE_WEB.w}px;
         height: ${SPRITE_ACTUAL_SIZE_WEB.h}px;
@@ -80,7 +82,7 @@ let OUTPUT_HTML_START = (imgURL, cssURL) => {
       .sportIcons2x [class*='imgSpr']{
         overflow:hidden; text-indent:-999px;
         background-image: url(${imgURL});
-        background-position: 0 -1700px;
+        background-position: 0 0;
         background-size:100%;
         width: ${SPRITE_ACTUAL_SIZE_MOB.w}px;
         height: ${SPRITE_ACTUAL_SIZE_MOB.h}px;
@@ -124,11 +126,22 @@ function prepareSprite(img, ctx, pos) {
 }
 
 loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
+  let newSpriteEndIndex = FILES[FILES.length - 1].split(".")[0];
+  let newSpriteStartIndex = FILES[0].split(".")[0];
+
+  let lastSpriteIndex = image.height / SPRITE_SIZE.h;
+  let additionalHeight =
+    (newSpriteEndIndex - lastSpriteIndex + SPRITE_DEFAULT_ICONST_LENGTH + 1) *
+    SPRITE_SIZE.h;
+  let emptyStartIndex = lastSpriteIndex;
+  let emptyEndIndex = +newSpriteStartIndex;
+
   const CW = image.width;
-  const CH = image.height;
+  const CH = image.height + additionalHeight;
   const CANVAS = createCanvas(CW, CH);
+
   const CTX = CANVAS.getContext("2d");
-  CTX.drawImage(image, 0, SPRITE_SIZE.h * 2, image.width, image.height);
+  CTX.drawImage(image, 0, 0, image.width, image.height);
 
   FILES.forEach((file, i) => {
     loadImage(`${INPUTT_DIR_FILES_TO_ADD}/${file}`).then((_imagePart) => {
@@ -136,14 +149,16 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
 
       let position = {
         x: 0,
-        y: fileName * SPRITE_SIZE.h,
+        y: (fileName + SPRITE_DEFAULT_ICONST_LENGTH) * SPRITE_SIZE.h,
       };
 
       prepareSprite(_imagePart, CTX, position);
     });
   });
 
-  let iconsLength = image.height / SPRITE_SIZE.h;
+  let iconsLength = CH / SPRITE_SIZE.h;
+
+  console.log(iconsLength);
 
   for (let k = 0; k < iconsLength; k++) {
     let cssPositionTiny = {
@@ -168,9 +183,12 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
     let selectorWeb = `${PREFIX}${_k}`;
 
     let selectorTiny = `tg_sport_icons_tiny ${prefix}${_k}`;
-    OUTPUT_CSS_CONTENT += createCSSChunk(selectorTiny, cssPositionTiny);
-    // OUTPUT_CSS_COMMENT += `/*ID:${selectorMob}*/\n`;
-    OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
+    if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
+      OUTPUT_CSS_CONTENT += createCSSChunk(selectorTiny, cssPositionTiny);
+      OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
+    } else {
+      console.log(k);
+    }
   }
 
   for (let k = 0; k < iconsLength; k++) {
@@ -193,9 +211,10 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
     }
 
     let selectorWeb = `${PREFIX}${_k}`;
-    OUTPUT_CSS_CONTENT += createCSSChunk(selectorWeb, cssPositionWeb);
-    // OUTPUT_CSS_COMMENT += `/*ID:${selectorWeb}*/\n`;
-    OUTPUT_HTML_CONTENT_WEB += createHTMLChunk(selectorWeb);
+    if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
+      OUTPUT_CSS_CONTENT += createCSSChunk(selectorWeb, cssPositionWeb);
+      OUTPUT_HTML_CONTENT_WEB += createHTMLChunk(selectorWeb);
+    }
   }
 
   for (let k = 0; k < iconsLength; k++) {
@@ -221,9 +240,10 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
     let selectorWeb = `${PREFIX}${_k}`;
 
     let selectorMob = `sportIcons2x ${prefix}${_k}`;
-    OUTPUT_CSS_CONTENT += createCSSChunk(selectorMob, cssPositionMob);
-    // OUTPUT_CSS_COMMENT += `/*ID:${selectorMob}*/\n`;
-    OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
+    if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
+      OUTPUT_CSS_CONTENT += createCSSChunk(selectorMob, cssPositionMob);
+      OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
+    }
   }
 
   let cssContent = `${OUTPUT_CSS_COMMENT}${OUTPUT_CSS_CONTENT}${OUTPUT_CSS_COMMENT}`;

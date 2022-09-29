@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build_tournaments": "node scripts/build_tournament_sprite.js",
-    "build_sport_icons": "node scripts/build_sport_sprite.js"
+    "build_sport_icons": "node scripts/build_sport_sprite.js",
+    "optimise": "node scripts/optimise.js"
   },
   "author": "",
   "license": "ISC",
