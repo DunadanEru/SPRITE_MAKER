@@ -1,354 +1,734 @@
-/*============ 12 09 2022 ============*/
-.tg_sport_icons_tiny .imgSprDefault {
+[class^="imgSpr"],
+[class*="imgSpr"] {
+  width: 24px;
+  height: 24px;
+}
+
+.dg_sport_icons_tinyest [class^="imgSpr"],
+.dg_sport_icons_tinyest [class*="imgSpr"],
+.tg_sport_icons_tinyest [class^="imgSpr"],
+.tg_sport_icons_tinyest [class*="imgSpr"] {
+  width: 16px;
+  height: 16px;
+}
+
+.dg_sport_icons_tiny [class^="imgSpr"],
+.dg_sport_icons_tiny [class*="imgSpr"],
+.tg_sport_icons_tiny [class^="imgSpr"],
+.tg_sport_icons_tiny [class*="imgSpr"] {
+  width: 20px;
+  height: 20px;
+}
+
+.sportIcons2x [class^="imgSpr"],
+.sportIcons2x [class*="imgSpr"],
+.dg_sport_icons_large [class^="imgSpr"],
+.dg_sport_icons_large [class*="imgSpr"] {
+  width: 48px;
+  height: 48px;
+}
+/*============ 24 10 2022 ============*/
+.dg_sport_icons_tinyest .imgSprDefault {
   background-position: 0px -0px;
 }
-.tg_sport_icons_tiny .imgSpr0 {
-  background-position: 0px -18px;
+.dg_sport_icons_tinyest .imgSpr0 {
+  background-position: 0px -16px;
 }
-.tg_sport_icons_tiny .imgSpr1 {
-  background-position: 0px -36px;
+.dg_sport_icons_tinyest .imgSpr1 {
+  background-position: 0px -32px;
 }
-.tg_sport_icons_tiny .imgSpr2 {
-  background-position: 0px -54px;
+.dg_sport_icons_tinyest .imgSpr2 {
+  background-position: 0px -48px;
 }
-.tg_sport_icons_tiny .imgSpr3 {
-  background-position: 0px -72px;
+.dg_sport_icons_tinyest .imgSpr3 {
+  background-position: 0px -64px;
 }
-.tg_sport_icons_tiny .imgSpr4 {
-  background-position: 0px -90px;
+.dg_sport_icons_tinyest .imgSpr4 {
+  background-position: 0px -80px;
 }
-.tg_sport_icons_tiny .imgSpr5 {
-  background-position: 0px -108px;
+.dg_sport_icons_tinyest .imgSpr5 {
+  background-position: 0px -96px;
 }
-.tg_sport_icons_tiny .imgSpr6 {
-  background-position: 0px -126px;
+.dg_sport_icons_tinyest .imgSpr6 {
+  background-position: 0px -112px;
 }
-.tg_sport_icons_tiny .imgSpr7 {
+.dg_sport_icons_tinyest .imgSpr7 {
+  background-position: 0px -128px;
+}
+.dg_sport_icons_tinyest .imgSpr8 {
   background-position: 0px -144px;
 }
-.tg_sport_icons_tiny .imgSpr8 {
-  background-position: 0px -162px;
+.dg_sport_icons_tinyest .imgSpr9 {
+  background-position: 0px -160px;
 }
-.tg_sport_icons_tiny .imgSpr9 {
-  background-position: 0px -180px;
+.dg_sport_icons_tinyest .imgSpr10 {
+  background-position: 0px -176px;
 }
-.tg_sport_icons_tiny .imgSpr10 {
-  background-position: 0px -198px;
+.dg_sport_icons_tinyest .imgSpr11 {
+  background-position: 0px -192px;
 }
-.tg_sport_icons_tiny .imgSpr11 {
-  background-position: 0px -216px;
+.dg_sport_icons_tinyest .imgSpr12 {
+  background-position: 0px -208px;
 }
-.tg_sport_icons_tiny .imgSpr12 {
-  background-position: 0px -234px;
+.dg_sport_icons_tinyest .imgSpr13 {
+  background-position: 0px -224px;
 }
-.tg_sport_icons_tiny .imgSpr13 {
-  background-position: 0px -252px;
+.dg_sport_icons_tinyest .imgSpr14 {
+  background-position: 0px -240px;
 }
-.tg_sport_icons_tiny .imgSpr14 {
-  background-position: 0px -270px;
+.dg_sport_icons_tinyest .imgSpr15 {
+  background-position: 0px -256px;
 }
-.tg_sport_icons_tiny .imgSpr15 {
+.dg_sport_icons_tinyest .imgSpr16 {
+  background-position: 0px -272px;
+}
+.dg_sport_icons_tinyest .imgSpr17 {
   background-position: 0px -288px;
 }
-.tg_sport_icons_tiny .imgSpr16 {
-  background-position: 0px -306px;
+.dg_sport_icons_tinyest .imgSpr18 {
+  background-position: 0px -304px;
 }
-.tg_sport_icons_tiny .imgSpr17 {
-  background-position: 0px -324px;
+.dg_sport_icons_tinyest .imgSpr19 {
+  background-position: 0px -320px;
 }
-.tg_sport_icons_tiny .imgSpr18 {
-  background-position: 0px -342px;
+.dg_sport_icons_tinyest .imgSpr20 {
+  background-position: 0px -336px;
 }
-.tg_sport_icons_tiny .imgSpr19 {
-  background-position: 0px -360px;
+.dg_sport_icons_tinyest .imgSpr21 {
+  background-position: 0px -352px;
 }
-.tg_sport_icons_tiny .imgSpr20 {
-  background-position: 0px -378px;
+.dg_sport_icons_tinyest .imgSpr22 {
+  background-position: 0px -368px;
 }
-.tg_sport_icons_tiny .imgSpr21 {
-  background-position: 0px -396px;
+.dg_sport_icons_tinyest .imgSpr23 {
+  background-position: 0px -384px;
 }
-.tg_sport_icons_tiny .imgSpr22 {
-  background-position: 0px -414px;
+.dg_sport_icons_tinyest .imgSpr24 {
+  background-position: 0px -400px;
 }
-.tg_sport_icons_tiny .imgSpr23 {
+.dg_sport_icons_tinyest .imgSpr25 {
+  background-position: 0px -416px;
+}
+.dg_sport_icons_tinyest .imgSpr26 {
   background-position: 0px -432px;
 }
-.tg_sport_icons_tiny .imgSpr24 {
-  background-position: 0px -450px;
+.dg_sport_icons_tinyest .imgSpr27 {
+  background-position: 0px -448px;
 }
-.tg_sport_icons_tiny .imgSpr25 {
-  background-position: 0px -468px;
+.dg_sport_icons_tinyest .imgSpr28 {
+  background-position: 0px -464px;
 }
-.tg_sport_icons_tiny .imgSpr26 {
-  background-position: 0px -486px;
+.dg_sport_icons_tinyest .imgSpr29 {
+  background-position: 0px -480px;
 }
-.tg_sport_icons_tiny .imgSpr27 {
-  background-position: 0px -504px;
+.dg_sport_icons_tinyest .imgSpr30 {
+  background-position: 0px -496px;
 }
-.tg_sport_icons_tiny .imgSpr28 {
-  background-position: 0px -522px;
+.dg_sport_icons_tinyest .imgSpr31 {
+  background-position: 0px -512px;
 }
-.tg_sport_icons_tiny .imgSpr29 {
-  background-position: 0px -540px;
+.dg_sport_icons_tinyest .imgSpr32 {
+  background-position: 0px -528px;
 }
-.tg_sport_icons_tiny .imgSpr30 {
-  background-position: 0px -558px;
+.dg_sport_icons_tinyest .imgSpr33 {
+  background-position: 0px -544px;
 }
-.tg_sport_icons_tiny .imgSpr31 {
+.dg_sport_icons_tinyest .imgSpr34 {
+  background-position: 0px -560px;
+}
+.dg_sport_icons_tinyest .imgSpr35 {
   background-position: 0px -576px;
 }
-.tg_sport_icons_tiny .imgSpr32 {
-  background-position: 0px -594px;
+.dg_sport_icons_tinyest .imgSpr36 {
+  background-position: 0px -592px;
 }
-.tg_sport_icons_tiny .imgSpr33 {
-  background-position: 0px -612px;
+.dg_sport_icons_tinyest .imgSpr37 {
+  background-position: 0px -608px;
 }
-.tg_sport_icons_tiny .imgSpr34 {
-  background-position: 0px -630px;
+.dg_sport_icons_tinyest .imgSpr38 {
+  background-position: 0px -624px;
 }
-.tg_sport_icons_tiny .imgSpr35 {
-  background-position: 0px -648px;
+.dg_sport_icons_tinyest .imgSpr39 {
+  background-position: 0px -640px;
 }
-.tg_sport_icons_tiny .imgSpr36 {
-  background-position: 0px -666px;
+.dg_sport_icons_tinyest .imgSpr40 {
+  background-position: 0px -656px;
 }
-.tg_sport_icons_tiny .imgSpr37 {
-  background-position: 0px -684px;
+.dg_sport_icons_tinyest .imgSpr41 {
+  background-position: 0px -672px;
 }
-.tg_sport_icons_tiny .imgSpr38 {
-  background-position: 0px -702px;
+.dg_sport_icons_tinyest .imgSpr42 {
+  background-position: 0px -688px;
 }
-.tg_sport_icons_tiny .imgSpr39 {
+.dg_sport_icons_tinyest .imgSpr43 {
+  background-position: 0px -704px;
+}
+.dg_sport_icons_tinyest .imgSpr44 {
   background-position: 0px -720px;
 }
-.tg_sport_icons_tiny .imgSpr40 {
-  background-position: 0px -738px;
+.dg_sport_icons_tinyest .imgSpr45 {
+  background-position: 0px -736px;
 }
-.tg_sport_icons_tiny .imgSpr41 {
-  background-position: 0px -756px;
+.dg_sport_icons_tinyest .imgSpr46 {
+  background-position: 0px -752px;
 }
-.tg_sport_icons_tiny .imgSpr42 {
-  background-position: 0px -774px;
+.dg_sport_icons_tinyest .imgSpr47 {
+  background-position: 0px -768px;
 }
-.tg_sport_icons_tiny .imgSpr43 {
-  background-position: 0px -792px;
+.dg_sport_icons_tinyest .imgSpr48 {
+  background-position: 0px -784px;
 }
-.tg_sport_icons_tiny .imgSpr44 {
-  background-position: 0px -810px;
+.dg_sport_icons_tinyest .imgSpr49 {
+  background-position: 0px -800px;
 }
-.tg_sport_icons_tiny .imgSpr45 {
-  background-position: 0px -828px;
+.dg_sport_icons_tinyest .imgSpr50 {
+  background-position: 0px -816px;
 }
-.tg_sport_icons_tiny .imgSpr46 {
-  background-position: 0px -846px;
+.dg_sport_icons_tinyest .imgSpr51 {
+  background-position: 0px -832px;
 }
-.tg_sport_icons_tiny .imgSpr47 {
+.dg_sport_icons_tinyest .imgSpr52 {
+  background-position: 0px -848px;
+}
+.dg_sport_icons_tinyest .imgSpr53 {
   background-position: 0px -864px;
 }
-.tg_sport_icons_tiny .imgSpr48 {
-  background-position: 0px -882px;
+.dg_sport_icons_tinyest .imgSpr54 {
+  background-position: 0px -880px;
 }
-.tg_sport_icons_tiny .imgSpr49 {
-  background-position: 0px -900px;
+.dg_sport_icons_tinyest .imgSpr55 {
+  background-position: 0px -896px;
 }
-.tg_sport_icons_tiny .imgSpr50 {
-  background-position: 0px -918px;
+.dg_sport_icons_tinyest .imgSpr56 {
+  background-position: 0px -912px;
 }
-.tg_sport_icons_tiny .imgSpr51 {
-  background-position: 0px -936px;
+.dg_sport_icons_tinyest .imgSpr57 {
+  background-position: 0px -928px;
 }
-.tg_sport_icons_tiny .imgSpr52 {
-  background-position: 0px -954px;
+.dg_sport_icons_tinyest .imgSpr58 {
+  background-position: 0px -944px;
 }
-.tg_sport_icons_tiny .imgSpr53 {
-  background-position: 0px -972px;
+.dg_sport_icons_tinyest .imgSpr59 {
+  background-position: 0px -960px;
 }
-.tg_sport_icons_tiny .imgSpr54 {
-  background-position: 0px -990px;
+.dg_sport_icons_tinyest .imgSpr60 {
+  background-position: 0px -976px;
 }
-.tg_sport_icons_tiny .imgSpr55 {
+.dg_sport_icons_tinyest .imgSpr61 {
+  background-position: 0px -992px;
+}
+.dg_sport_icons_tinyest .imgSpr62 {
   background-position: 0px -1008px;
 }
-.tg_sport_icons_tiny .imgSpr56 {
-  background-position: 0px -1026px;
+.dg_sport_icons_tinyest .imgSpr63 {
+  background-position: 0px -1024px;
 }
-.tg_sport_icons_tiny .imgSpr57 {
-  background-position: 0px -1044px;
+.dg_sport_icons_tinyest .imgSpr64 {
+  background-position: 0px -1040px;
 }
-.tg_sport_icons_tiny .imgSpr58 {
-  background-position: 0px -1062px;
+.dg_sport_icons_tinyest .imgSpr65 {
+  background-position: 0px -1056px;
 }
-.tg_sport_icons_tiny .imgSpr59 {
-  background-position: 0px -1080px;
+.dg_sport_icons_tinyest .imgSpr66 {
+  background-position: 0px -1072px;
 }
-.tg_sport_icons_tiny .imgSpr60 {
-  background-position: 0px -1098px;
+.dg_sport_icons_tinyest .imgSpr67 {
+  background-position: 0px -1088px;
 }
-.tg_sport_icons_tiny .imgSpr61 {
-  background-position: 0px -1116px;
+.dg_sport_icons_tinyest .imgSpr68 {
+  background-position: 0px -1104px;
 }
-.tg_sport_icons_tiny .imgSpr62 {
-  background-position: 0px -1134px;
+.dg_sport_icons_tinyest .imgSpr69 {
+  background-position: 0px -1120px;
 }
-.tg_sport_icons_tiny .imgSpr63 {
+.dg_sport_icons_tinyest .imgSpr70 {
+  background-position: 0px -1136px;
+}
+.dg_sport_icons_tinyest .imgSpr71 {
   background-position: 0px -1152px;
 }
-.tg_sport_icons_tiny .imgSpr64 {
-  background-position: 0px -1170px;
+.dg_sport_icons_tinyest .imgSpr72 {
+  background-position: 0px -1168px;
 }
-.tg_sport_icons_tiny .imgSpr65 {
-  background-position: 0px -1188px;
+.dg_sport_icons_tinyest .imgSpr73 {
+  background-position: 0px -1184px;
 }
-.tg_sport_icons_tiny .imgSpr66 {
-  background-position: 0px -1206px;
+.dg_sport_icons_tinyest .imgSpr74 {
+  background-position: 0px -1200px;
 }
-.tg_sport_icons_tiny .imgSpr67 {
-  background-position: 0px -1224px;
+.dg_sport_icons_tinyest .imgSpr75 {
+  background-position: 0px -1216px;
 }
-.tg_sport_icons_tiny .imgSpr68 {
-  background-position: 0px -1242px;
+.dg_sport_icons_tinyest .imgSpr76 {
+  background-position: 0px -1232px;
 }
-.tg_sport_icons_tiny .imgSpr69 {
-  background-position: 0px -1260px;
+.dg_sport_icons_tinyest .imgSpr77 {
+  background-position: 0px -1248px;
 }
-.tg_sport_icons_tiny .imgSpr70 {
-  background-position: 0px -1278px;
+.dg_sport_icons_tinyest .imgSpr78 {
+  background-position: 0px -1264px;
 }
-.tg_sport_icons_tiny .imgSpr71 {
+.dg_sport_icons_tinyest .imgSpr79 {
+  background-position: 0px -1280px;
+}
+.dg_sport_icons_tinyest .imgSpr80 {
   background-position: 0px -1296px;
 }
-.tg_sport_icons_tiny .imgSpr72 {
-  background-position: 0px -1314px;
+.dg_sport_icons_tinyest .imgSpr81 {
+  background-position: 0px -1312px;
 }
-.tg_sport_icons_tiny .imgSpr73 {
-  background-position: 0px -1332px;
+.dg_sport_icons_tinyest .imgSpr82 {
+  background-position: 0px -1328px;
 }
-.tg_sport_icons_tiny .imgSpr74 {
-  background-position: 0px -1350px;
+.dg_sport_icons_tinyest .imgSpr83 {
+  background-position: 0px -1344px;
 }
-.tg_sport_icons_tiny .imgSpr75 {
-  background-position: 0px -1368px;
+.dg_sport_icons_tinyest .imgSpr84 {
+  background-position: 0px -1360px;
 }
-.tg_sport_icons_tiny .imgSpr76 {
-  background-position: 0px -1386px;
+.dg_sport_icons_tinyest .imgSpr85 {
+  background-position: 0px -1376px;
 }
-.tg_sport_icons_tiny .imgSpr77 {
-  background-position: 0px -1404px;
+.dg_sport_icons_tinyest .imgSpr86 {
+  background-position: 0px -1392px;
 }
-.tg_sport_icons_tiny .imgSpr78 {
-  background-position: 0px -1422px;
+.dg_sport_icons_tinyest .imgSpr87 {
+  background-position: 0px -1408px;
 }
-.tg_sport_icons_tiny .imgSpr79 {
+.dg_sport_icons_tinyest .imgSpr88 {
+  background-position: 0px -1424px;
+}
+.dg_sport_icons_tinyest .imgSpr89 {
   background-position: 0px -1440px;
 }
-.tg_sport_icons_tiny .imgSpr80 {
-  background-position: 0px -1458px;
+.dg_sport_icons_tinyest .imgSpr90 {
+  background-position: 0px -1456px;
 }
-.tg_sport_icons_tiny .imgSpr81 {
-  background-position: 0px -1476px;
+.dg_sport_icons_tinyest .imgSpr91 {
+  background-position: 0px -1472px;
 }
-.tg_sport_icons_tiny .imgSpr82 {
-  background-position: 0px -1494px;
+.dg_sport_icons_tinyest .imgSpr92 {
+  background-position: 0px -1488px;
 }
-.tg_sport_icons_tiny .imgSpr83 {
-  background-position: 0px -1512px;
+.dg_sport_icons_tinyest .imgSpr93 {
+  background-position: 0px -1504px;
 }
-.tg_sport_icons_tiny .imgSpr84 {
-  background-position: 0px -1530px;
+.dg_sport_icons_tinyest .imgSpr94 {
+  background-position: 0px -1520px;
 }
-.tg_sport_icons_tiny .imgSpr85 {
-  background-position: 0px -1548px;
+.dg_sport_icons_tinyest .imgSpr95 {
+  background-position: 0px -1536px;
 }
-.tg_sport_icons_tiny .imgSpr86 {
-  background-position: 0px -1566px;
+.dg_sport_icons_tinyest .imgSpr96 {
+  background-position: 0px -1552px;
 }
-.tg_sport_icons_tiny .imgSpr87 {
+.dg_sport_icons_tinyest .imgSpr97 {
+  background-position: 0px -1568px;
+}
+.dg_sport_icons_tinyest .imgSpr98 {
   background-position: 0px -1584px;
 }
-.tg_sport_icons_tiny .imgSpr88 {
-  background-position: 0px -1602px;
+.dg_sport_icons_tinyest .imgSpr99 {
+  background-position: 0px -1600px;
 }
-.tg_sport_icons_tiny .imgSpr89 {
-  background-position: 0px -1620px;
+.dg_sport_icons_tinyest .imgSpr100 {
+  background-position: 0px -1616px;
 }
-.tg_sport_icons_tiny .imgSpr90 {
-  background-position: 0px -1638px;
+.dg_sport_icons_tinyest .imgSpr101 {
+  background-position: 0px -1632px;
 }
-.tg_sport_icons_tiny .imgSpr91 {
-  background-position: 0px -1656px;
+.dg_sport_icons_tinyest .imgSpr102 {
+  background-position: 0px -1648px;
 }
-.tg_sport_icons_tiny .imgSpr92 {
-  background-position: 0px -1674px;
+.dg_sport_icons_tinyest .imgSpr103 {
+  background-position: 0px -1664px;
 }
-.tg_sport_icons_tiny .imgSpr93 {
-  background-position: 0px -1692px;
+.dg_sport_icons_tinyest .imgSpr104 {
+  background-position: 0px -1680px;
 }
-.tg_sport_icons_tiny .imgSpr94 {
-  background-position: 0px -1710px;
+.dg_sport_icons_tinyest .imgSpr105 {
+  background-position: 0px -1696px;
 }
-.tg_sport_icons_tiny .imgSpr95 {
+.dg_sport_icons_tinyest .imgSpr106 {
+  background-position: 0px -1712px;
+}
+.dg_sport_icons_tinyest .imgSpr107 {
   background-position: 0px -1728px;
 }
-.tg_sport_icons_tiny .imgSpr96 {
-  background-position: 0px -1746px;
+.dg_sport_icons_tinyest .imgSpr108 {
+  background-position: 0px -1744px;
 }
-.tg_sport_icons_tiny .imgSpr97 {
-  background-position: 0px -1764px;
+.dg_sport_icons_tinyest .imgSpr109 {
+  background-position: 0px -1760px;
 }
-.tg_sport_icons_tiny .imgSpr98 {
-  background-position: 0px -1782px;
+.dg_sport_icons_tinyest .imgSpr110 {
+  background-position: 0px -1776px;
 }
-.tg_sport_icons_tiny .imgSpr99 {
-  background-position: 0px -1800px;
+.dg_sport_icons_tinyest .imgSpr111 {
+  background-position: 0px -1792px;
 }
-.tg_sport_icons_tiny .imgSpr100 {
-  background-position: 0px -1818px;
+.dg_sport_icons_tinyest .imgSpr112 {
+  background-position: 0px -1808px;
 }
-.tg_sport_icons_tiny .imgSpr101 {
-  background-position: 0px -1836px;
+.dg_sport_icons_tinyest .imgSpr113 {
+  background-position: 0px -1824px;
 }
-.tg_sport_icons_tiny .imgSpr102 {
-  background-position: 0px -1854px;
-}
-.tg_sport_icons_tiny .imgSpr103 {
+.dg_sport_icons_tinyest .imgSpr116 {
   background-position: 0px -1872px;
 }
-.tg_sport_icons_tiny .imgSpr104 {
-  background-position: 0px -1890px;
+.dg_sport_icons_tinyest .imgSpr117 {
+  background-position: 0px -1888px;
 }
-.tg_sport_icons_tiny .imgSpr105 {
-  background-position: 0px -1908px;
+.dg_sport_icons_tiny .imgSprDefault {
+  background-position: 0px -0px;
 }
-.tg_sport_icons_tiny .imgSpr106 {
-  background-position: 0px -1926px;
+.dg_sport_icons_tiny .imgSpr0 {
+  background-position: 0px -20px;
 }
-.tg_sport_icons_tiny .imgSpr107 {
-  background-position: 0px -1944px;
+.dg_sport_icons_tiny .imgSpr1 {
+  background-position: 0px -40px;
 }
-.tg_sport_icons_tiny .imgSpr108 {
-  background-position: 0px -1962px;
+.dg_sport_icons_tiny .imgSpr2 {
+  background-position: 0px -60px;
 }
-.tg_sport_icons_tiny .imgSpr109 {
+.dg_sport_icons_tiny .imgSpr3 {
+  background-position: 0px -80px;
+}
+.dg_sport_icons_tiny .imgSpr4 {
+  background-position: 0px -100px;
+}
+.dg_sport_icons_tiny .imgSpr5 {
+  background-position: 0px -120px;
+}
+.dg_sport_icons_tiny .imgSpr6 {
+  background-position: 0px -140px;
+}
+.dg_sport_icons_tiny .imgSpr7 {
+  background-position: 0px -160px;
+}
+.dg_sport_icons_tiny .imgSpr8 {
+  background-position: 0px -180px;
+}
+.dg_sport_icons_tiny .imgSpr9 {
+  background-position: 0px -200px;
+}
+.dg_sport_icons_tiny .imgSpr10 {
+  background-position: 0px -220px;
+}
+.dg_sport_icons_tiny .imgSpr11 {
+  background-position: 0px -240px;
+}
+.dg_sport_icons_tiny .imgSpr12 {
+  background-position: 0px -260px;
+}
+.dg_sport_icons_tiny .imgSpr13 {
+  background-position: 0px -280px;
+}
+.dg_sport_icons_tiny .imgSpr14 {
+  background-position: 0px -300px;
+}
+.dg_sport_icons_tiny .imgSpr15 {
+  background-position: 0px -320px;
+}
+.dg_sport_icons_tiny .imgSpr16 {
+  background-position: 0px -340px;
+}
+.dg_sport_icons_tiny .imgSpr17 {
+  background-position: 0px -360px;
+}
+.dg_sport_icons_tiny .imgSpr18 {
+  background-position: 0px -380px;
+}
+.dg_sport_icons_tiny .imgSpr19 {
+  background-position: 0px -400px;
+}
+.dg_sport_icons_tiny .imgSpr20 {
+  background-position: 0px -420px;
+}
+.dg_sport_icons_tiny .imgSpr21 {
+  background-position: 0px -440px;
+}
+.dg_sport_icons_tiny .imgSpr22 {
+  background-position: 0px -460px;
+}
+.dg_sport_icons_tiny .imgSpr23 {
+  background-position: 0px -480px;
+}
+.dg_sport_icons_tiny .imgSpr24 {
+  background-position: 0px -500px;
+}
+.dg_sport_icons_tiny .imgSpr25 {
+  background-position: 0px -520px;
+}
+.dg_sport_icons_tiny .imgSpr26 {
+  background-position: 0px -540px;
+}
+.dg_sport_icons_tiny .imgSpr27 {
+  background-position: 0px -560px;
+}
+.dg_sport_icons_tiny .imgSpr28 {
+  background-position: 0px -580px;
+}
+.dg_sport_icons_tiny .imgSpr29 {
+  background-position: 0px -600px;
+}
+.dg_sport_icons_tiny .imgSpr30 {
+  background-position: 0px -620px;
+}
+.dg_sport_icons_tiny .imgSpr31 {
+  background-position: 0px -640px;
+}
+.dg_sport_icons_tiny .imgSpr32 {
+  background-position: 0px -660px;
+}
+.dg_sport_icons_tiny .imgSpr33 {
+  background-position: 0px -680px;
+}
+.dg_sport_icons_tiny .imgSpr34 {
+  background-position: 0px -700px;
+}
+.dg_sport_icons_tiny .imgSpr35 {
+  background-position: 0px -720px;
+}
+.dg_sport_icons_tiny .imgSpr36 {
+  background-position: 0px -740px;
+}
+.dg_sport_icons_tiny .imgSpr37 {
+  background-position: 0px -760px;
+}
+.dg_sport_icons_tiny .imgSpr38 {
+  background-position: 0px -780px;
+}
+.dg_sport_icons_tiny .imgSpr39 {
+  background-position: 0px -800px;
+}
+.dg_sport_icons_tiny .imgSpr40 {
+  background-position: 0px -820px;
+}
+.dg_sport_icons_tiny .imgSpr41 {
+  background-position: 0px -840px;
+}
+.dg_sport_icons_tiny .imgSpr42 {
+  background-position: 0px -860px;
+}
+.dg_sport_icons_tiny .imgSpr43 {
+  background-position: 0px -880px;
+}
+.dg_sport_icons_tiny .imgSpr44 {
+  background-position: 0px -900px;
+}
+.dg_sport_icons_tiny .imgSpr45 {
+  background-position: 0px -920px;
+}
+.dg_sport_icons_tiny .imgSpr46 {
+  background-position: 0px -940px;
+}
+.dg_sport_icons_tiny .imgSpr47 {
+  background-position: 0px -960px;
+}
+.dg_sport_icons_tiny .imgSpr48 {
+  background-position: 0px -980px;
+}
+.dg_sport_icons_tiny .imgSpr49 {
+  background-position: 0px -1000px;
+}
+.dg_sport_icons_tiny .imgSpr50 {
+  background-position: 0px -1020px;
+}
+.dg_sport_icons_tiny .imgSpr51 {
+  background-position: 0px -1040px;
+}
+.dg_sport_icons_tiny .imgSpr52 {
+  background-position: 0px -1060px;
+}
+.dg_sport_icons_tiny .imgSpr53 {
+  background-position: 0px -1080px;
+}
+.dg_sport_icons_tiny .imgSpr54 {
+  background-position: 0px -1100px;
+}
+.dg_sport_icons_tiny .imgSpr55 {
+  background-position: 0px -1120px;
+}
+.dg_sport_icons_tiny .imgSpr56 {
+  background-position: 0px -1140px;
+}
+.dg_sport_icons_tiny .imgSpr57 {
+  background-position: 0px -1160px;
+}
+.dg_sport_icons_tiny .imgSpr58 {
+  background-position: 0px -1180px;
+}
+.dg_sport_icons_tiny .imgSpr59 {
+  background-position: 0px -1200px;
+}
+.dg_sport_icons_tiny .imgSpr60 {
+  background-position: 0px -1220px;
+}
+.dg_sport_icons_tiny .imgSpr61 {
+  background-position: 0px -1240px;
+}
+.dg_sport_icons_tiny .imgSpr62 {
+  background-position: 0px -1260px;
+}
+.dg_sport_icons_tiny .imgSpr63 {
+  background-position: 0px -1280px;
+}
+.dg_sport_icons_tiny .imgSpr64 {
+  background-position: 0px -1300px;
+}
+.dg_sport_icons_tiny .imgSpr65 {
+  background-position: 0px -1320px;
+}
+.dg_sport_icons_tiny .imgSpr66 {
+  background-position: 0px -1340px;
+}
+.dg_sport_icons_tiny .imgSpr67 {
+  background-position: 0px -1360px;
+}
+.dg_sport_icons_tiny .imgSpr68 {
+  background-position: 0px -1380px;
+}
+.dg_sport_icons_tiny .imgSpr69 {
+  background-position: 0px -1400px;
+}
+.dg_sport_icons_tiny .imgSpr70 {
+  background-position: 0px -1420px;
+}
+.dg_sport_icons_tiny .imgSpr71 {
+  background-position: 0px -1440px;
+}
+.dg_sport_icons_tiny .imgSpr72 {
+  background-position: 0px -1460px;
+}
+.dg_sport_icons_tiny .imgSpr73 {
+  background-position: 0px -1480px;
+}
+.dg_sport_icons_tiny .imgSpr74 {
+  background-position: 0px -1500px;
+}
+.dg_sport_icons_tiny .imgSpr75 {
+  background-position: 0px -1520px;
+}
+.dg_sport_icons_tiny .imgSpr76 {
+  background-position: 0px -1540px;
+}
+.dg_sport_icons_tiny .imgSpr77 {
+  background-position: 0px -1560px;
+}
+.dg_sport_icons_tiny .imgSpr78 {
+  background-position: 0px -1580px;
+}
+.dg_sport_icons_tiny .imgSpr79 {
+  background-position: 0px -1600px;
+}
+.dg_sport_icons_tiny .imgSpr80 {
+  background-position: 0px -1620px;
+}
+.dg_sport_icons_tiny .imgSpr81 {
+  background-position: 0px -1640px;
+}
+.dg_sport_icons_tiny .imgSpr82 {
+  background-position: 0px -1660px;
+}
+.dg_sport_icons_tiny .imgSpr83 {
+  background-position: 0px -1680px;
+}
+.dg_sport_icons_tiny .imgSpr84 {
+  background-position: 0px -1700px;
+}
+.dg_sport_icons_tiny .imgSpr85 {
+  background-position: 0px -1720px;
+}
+.dg_sport_icons_tiny .imgSpr86 {
+  background-position: 0px -1740px;
+}
+.dg_sport_icons_tiny .imgSpr87 {
+  background-position: 0px -1760px;
+}
+.dg_sport_icons_tiny .imgSpr88 {
+  background-position: 0px -1780px;
+}
+.dg_sport_icons_tiny .imgSpr89 {
+  background-position: 0px -1800px;
+}
+.dg_sport_icons_tiny .imgSpr90 {
+  background-position: 0px -1820px;
+}
+.dg_sport_icons_tiny .imgSpr91 {
+  background-position: 0px -1840px;
+}
+.dg_sport_icons_tiny .imgSpr92 {
+  background-position: 0px -1860px;
+}
+.dg_sport_icons_tiny .imgSpr93 {
+  background-position: 0px -1880px;
+}
+.dg_sport_icons_tiny .imgSpr94 {
+  background-position: 0px -1900px;
+}
+.dg_sport_icons_tiny .imgSpr95 {
+  background-position: 0px -1920px;
+}
+.dg_sport_icons_tiny .imgSpr96 {
+  background-position: 0px -1940px;
+}
+.dg_sport_icons_tiny .imgSpr97 {
+  background-position: 0px -1960px;
+}
+.dg_sport_icons_tiny .imgSpr98 {
   background-position: 0px -1980px;
 }
-.tg_sport_icons_tiny .imgSpr110 {
-  background-position: 0px -1998px;
+.dg_sport_icons_tiny .imgSpr99 {
+  background-position: 0px -2000px;
 }
-.tg_sport_icons_tiny .imgSpr111 {
-  background-position: 0px -2016px;
+.dg_sport_icons_tiny .imgSpr100 {
+  background-position: 0px -2020px;
 }
-.tg_sport_icons_tiny .imgSpr112 {
-  background-position: 0px -2034px;
+.dg_sport_icons_tiny .imgSpr101 {
+  background-position: 0px -2040px;
 }
-.tg_sport_icons_tiny .imgSpr113 {
-  background-position: 0px -2052px;
+.dg_sport_icons_tiny .imgSpr102 {
+  background-position: 0px -2060px;
 }
-.tg_sport_icons_tiny .imgSpr116 {
-  background-position: 0px -2106px;
+.dg_sport_icons_tiny .imgSpr103 {
+  background-position: 0px -2080px;
 }
-.tg_sport_icons_tiny .imgSpr117 {
-  background-position: 0px -2124px;
+.dg_sport_icons_tiny .imgSpr104 {
+  background-position: 0px -2100px;
+}
+.dg_sport_icons_tiny .imgSpr105 {
+  background-position: 0px -2120px;
+}
+.dg_sport_icons_tiny .imgSpr106 {
+  background-position: 0px -2140px;
+}
+.dg_sport_icons_tiny .imgSpr107 {
+  background-position: 0px -2160px;
+}
+.dg_sport_icons_tiny .imgSpr108 {
+  background-position: 0px -2180px;
+}
+.dg_sport_icons_tiny .imgSpr109 {
+  background-position: 0px -2200px;
+}
+.dg_sport_icons_tiny .imgSpr110 {
+  background-position: 0px -2220px;
+}
+.dg_sport_icons_tiny .imgSpr111 {
+  background-position: 0px -2240px;
+}
+.dg_sport_icons_tiny .imgSpr112 {
+  background-position: 0px -2260px;
+}
+.dg_sport_icons_tiny .imgSpr113 {
+  background-position: 0px -2280px;
+}
+.dg_sport_icons_tiny .imgSpr116 {
+  background-position: 0px -2340px;
+}
+.dg_sport_icons_tiny .imgSpr117 {
+  background-position: 0px -2360px;
 }
 .imgSprDefault {
   background-position: 0px -0px;
@@ -701,355 +1081,355 @@
 .imgSpr117 {
   background-position: 0px -2832px;
 }
-.sportIcons2x .imgSprDefault {
+.dg_sport_icons_large .imgSprDefault {
   background-position: 0px -0px;
 }
-.sportIcons2x .imgSpr0 {
+.dg_sport_icons_large .imgSpr0 {
   background-position: 0px -48px;
 }
-.sportIcons2x .imgSpr1 {
+.dg_sport_icons_large .imgSpr1 {
   background-position: 0px -96px;
 }
-.sportIcons2x .imgSpr2 {
+.dg_sport_icons_large .imgSpr2 {
   background-position: 0px -144px;
 }
-.sportIcons2x .imgSpr3 {
+.dg_sport_icons_large .imgSpr3 {
   background-position: 0px -192px;
 }
-.sportIcons2x .imgSpr4 {
+.dg_sport_icons_large .imgSpr4 {
   background-position: 0px -240px;
 }
-.sportIcons2x .imgSpr5 {
+.dg_sport_icons_large .imgSpr5 {
   background-position: 0px -288px;
 }
-.sportIcons2x .imgSpr6 {
+.dg_sport_icons_large .imgSpr6 {
   background-position: 0px -336px;
 }
-.sportIcons2x .imgSpr7 {
+.dg_sport_icons_large .imgSpr7 {
   background-position: 0px -384px;
 }
-.sportIcons2x .imgSpr8 {
+.dg_sport_icons_large .imgSpr8 {
   background-position: 0px -432px;
 }
-.sportIcons2x .imgSpr9 {
+.dg_sport_icons_large .imgSpr9 {
   background-position: 0px -480px;
 }
-.sportIcons2x .imgSpr10 {
+.dg_sport_icons_large .imgSpr10 {
   background-position: 0px -528px;
 }
-.sportIcons2x .imgSpr11 {
+.dg_sport_icons_large .imgSpr11 {
   background-position: 0px -576px;
 }
-.sportIcons2x .imgSpr12 {
+.dg_sport_icons_large .imgSpr12 {
   background-position: 0px -624px;
 }
-.sportIcons2x .imgSpr13 {
+.dg_sport_icons_large .imgSpr13 {
   background-position: 0px -672px;
 }
-.sportIcons2x .imgSpr14 {
+.dg_sport_icons_large .imgSpr14 {
   background-position: 0px -720px;
 }
-.sportIcons2x .imgSpr15 {
+.dg_sport_icons_large .imgSpr15 {
   background-position: 0px -768px;
 }
-.sportIcons2x .imgSpr16 {
+.dg_sport_icons_large .imgSpr16 {
   background-position: 0px -816px;
 }
-.sportIcons2x .imgSpr17 {
+.dg_sport_icons_large .imgSpr17 {
   background-position: 0px -864px;
 }
-.sportIcons2x .imgSpr18 {
+.dg_sport_icons_large .imgSpr18 {
   background-position: 0px -912px;
 }
-.sportIcons2x .imgSpr19 {
+.dg_sport_icons_large .imgSpr19 {
   background-position: 0px -960px;
 }
-.sportIcons2x .imgSpr20 {
+.dg_sport_icons_large .imgSpr20 {
   background-position: 0px -1008px;
 }
-.sportIcons2x .imgSpr21 {
+.dg_sport_icons_large .imgSpr21 {
   background-position: 0px -1056px;
 }
-.sportIcons2x .imgSpr22 {
+.dg_sport_icons_large .imgSpr22 {
   background-position: 0px -1104px;
 }
-.sportIcons2x .imgSpr23 {
+.dg_sport_icons_large .imgSpr23 {
   background-position: 0px -1152px;
 }
-.sportIcons2x .imgSpr24 {
+.dg_sport_icons_large .imgSpr24 {
   background-position: 0px -1200px;
 }
-.sportIcons2x .imgSpr25 {
+.dg_sport_icons_large .imgSpr25 {
   background-position: 0px -1248px;
 }
-.sportIcons2x .imgSpr26 {
+.dg_sport_icons_large .imgSpr26 {
   background-position: 0px -1296px;
 }
-.sportIcons2x .imgSpr27 {
+.dg_sport_icons_large .imgSpr27 {
   background-position: 0px -1344px;
 }
-.sportIcons2x .imgSpr28 {
+.dg_sport_icons_large .imgSpr28 {
   background-position: 0px -1392px;
 }
-.sportIcons2x .imgSpr29 {
+.dg_sport_icons_large .imgSpr29 {
   background-position: 0px -1440px;
 }
-.sportIcons2x .imgSpr30 {
+.dg_sport_icons_large .imgSpr30 {
   background-position: 0px -1488px;
 }
-.sportIcons2x .imgSpr31 {
+.dg_sport_icons_large .imgSpr31 {
   background-position: 0px -1536px;
 }
-.sportIcons2x .imgSpr32 {
+.dg_sport_icons_large .imgSpr32 {
   background-position: 0px -1584px;
 }
-.sportIcons2x .imgSpr33 {
+.dg_sport_icons_large .imgSpr33 {
   background-position: 0px -1632px;
 }
-.sportIcons2x .imgSpr34 {
+.dg_sport_icons_large .imgSpr34 {
   background-position: 0px -1680px;
 }
-.sportIcons2x .imgSpr35 {
+.dg_sport_icons_large .imgSpr35 {
   background-position: 0px -1728px;
 }
-.sportIcons2x .imgSpr36 {
+.dg_sport_icons_large .imgSpr36 {
   background-position: 0px -1776px;
 }
-.sportIcons2x .imgSpr37 {
+.dg_sport_icons_large .imgSpr37 {
   background-position: 0px -1824px;
 }
-.sportIcons2x .imgSpr38 {
+.dg_sport_icons_large .imgSpr38 {
   background-position: 0px -1872px;
 }
-.sportIcons2x .imgSpr39 {
+.dg_sport_icons_large .imgSpr39 {
   background-position: 0px -1920px;
 }
-.sportIcons2x .imgSpr40 {
+.dg_sport_icons_large .imgSpr40 {
   background-position: 0px -1968px;
 }
-.sportIcons2x .imgSpr41 {
+.dg_sport_icons_large .imgSpr41 {
   background-position: 0px -2016px;
 }
-.sportIcons2x .imgSpr42 {
+.dg_sport_icons_large .imgSpr42 {
   background-position: 0px -2064px;
 }
-.sportIcons2x .imgSpr43 {
+.dg_sport_icons_large .imgSpr43 {
   background-position: 0px -2112px;
 }
-.sportIcons2x .imgSpr44 {
+.dg_sport_icons_large .imgSpr44 {
   background-position: 0px -2160px;
 }
-.sportIcons2x .imgSpr45 {
+.dg_sport_icons_large .imgSpr45 {
   background-position: 0px -2208px;
 }
-.sportIcons2x .imgSpr46 {
+.dg_sport_icons_large .imgSpr46 {
   background-position: 0px -2256px;
 }
-.sportIcons2x .imgSpr47 {
+.dg_sport_icons_large .imgSpr47 {
   background-position: 0px -2304px;
 }
-.sportIcons2x .imgSpr48 {
+.dg_sport_icons_large .imgSpr48 {
   background-position: 0px -2352px;
 }
-.sportIcons2x .imgSpr49 {
+.dg_sport_icons_large .imgSpr49 {
   background-position: 0px -2400px;
 }
-.sportIcons2x .imgSpr50 {
+.dg_sport_icons_large .imgSpr50 {
   background-position: 0px -2448px;
 }
-.sportIcons2x .imgSpr51 {
+.dg_sport_icons_large .imgSpr51 {
   background-position: 0px -2496px;
 }
-.sportIcons2x .imgSpr52 {
+.dg_sport_icons_large .imgSpr52 {
   background-position: 0px -2544px;
 }
-.sportIcons2x .imgSpr53 {
+.dg_sport_icons_large .imgSpr53 {
   background-position: 0px -2592px;
 }
-.sportIcons2x .imgSpr54 {
+.dg_sport_icons_large .imgSpr54 {
   background-position: 0px -2640px;
 }
-.sportIcons2x .imgSpr55 {
+.dg_sport_icons_large .imgSpr55 {
   background-position: 0px -2688px;
 }
-.sportIcons2x .imgSpr56 {
+.dg_sport_icons_large .imgSpr56 {
   background-position: 0px -2736px;
 }
-.sportIcons2x .imgSpr57 {
+.dg_sport_icons_large .imgSpr57 {
   background-position: 0px -2784px;
 }
-.sportIcons2x .imgSpr58 {
+.dg_sport_icons_large .imgSpr58 {
   background-position: 0px -2832px;
 }
-.sportIcons2x .imgSpr59 {
+.dg_sport_icons_large .imgSpr59 {
   background-position: 0px -2880px;
 }
-.sportIcons2x .imgSpr60 {
+.dg_sport_icons_large .imgSpr60 {
   background-position: 0px -2928px;
 }
-.sportIcons2x .imgSpr61 {
+.dg_sport_icons_large .imgSpr61 {
   background-position: 0px -2976px;
 }
-.sportIcons2x .imgSpr62 {
+.dg_sport_icons_large .imgSpr62 {
   background-position: 0px -3024px;
 }
-.sportIcons2x .imgSpr63 {
+.dg_sport_icons_large .imgSpr63 {
   background-position: 0px -3072px;
 }
-.sportIcons2x .imgSpr64 {
+.dg_sport_icons_large .imgSpr64 {
   background-position: 0px -3120px;
 }
-.sportIcons2x .imgSpr65 {
+.dg_sport_icons_large .imgSpr65 {
   background-position: 0px -3168px;
 }
-.sportIcons2x .imgSpr66 {
+.dg_sport_icons_large .imgSpr66 {
   background-position: 0px -3216px;
 }
-.sportIcons2x .imgSpr67 {
+.dg_sport_icons_large .imgSpr67 {
   background-position: 0px -3264px;
 }
-.sportIcons2x .imgSpr68 {
+.dg_sport_icons_large .imgSpr68 {
   background-position: 0px -3312px;
 }
-.sportIcons2x .imgSpr69 {
+.dg_sport_icons_large .imgSpr69 {
   background-position: 0px -3360px;
 }
-.sportIcons2x .imgSpr70 {
+.dg_sport_icons_large .imgSpr70 {
   background-position: 0px -3408px;
 }
-.sportIcons2x .imgSpr71 {
+.dg_sport_icons_large .imgSpr71 {
   background-position: 0px -3456px;
 }
-.sportIcons2x .imgSpr72 {
+.dg_sport_icons_large .imgSpr72 {
   background-position: 0px -3504px;
 }
-.sportIcons2x .imgSpr73 {
+.dg_sport_icons_large .imgSpr73 {
   background-position: 0px -3552px;
 }
-.sportIcons2x .imgSpr74 {
+.dg_sport_icons_large .imgSpr74 {
   background-position: 0px -3600px;
 }
-.sportIcons2x .imgSpr75 {
+.dg_sport_icons_large .imgSpr75 {
   background-position: 0px -3648px;
 }
-.sportIcons2x .imgSpr76 {
+.dg_sport_icons_large .imgSpr76 {
   background-position: 0px -3696px;
 }
-.sportIcons2x .imgSpr77 {
+.dg_sport_icons_large .imgSpr77 {
   background-position: 0px -3744px;
 }
-.sportIcons2x .imgSpr78 {
+.dg_sport_icons_large .imgSpr78 {
   background-position: 0px -3792px;
 }
-.sportIcons2x .imgSpr79 {
+.dg_sport_icons_large .imgSpr79 {
   background-position: 0px -3840px;
 }
-.sportIcons2x .imgSpr80 {
+.dg_sport_icons_large .imgSpr80 {
   background-position: 0px -3888px;
 }
-.sportIcons2x .imgSpr81 {
+.dg_sport_icons_large .imgSpr81 {
   background-position: 0px -3936px;
 }
-.sportIcons2x .imgSpr82 {
+.dg_sport_icons_large .imgSpr82 {
   background-position: 0px -3984px;
 }
-.sportIcons2x .imgSpr83 {
+.dg_sport_icons_large .imgSpr83 {
   background-position: 0px -4032px;
 }
-.sportIcons2x .imgSpr84 {
+.dg_sport_icons_large .imgSpr84 {
   background-position: 0px -4080px;
 }
-.sportIcons2x .imgSpr85 {
+.dg_sport_icons_large .imgSpr85 {
   background-position: 0px -4128px;
 }
-.sportIcons2x .imgSpr86 {
+.dg_sport_icons_large .imgSpr86 {
   background-position: 0px -4176px;
 }
-.sportIcons2x .imgSpr87 {
+.dg_sport_icons_large .imgSpr87 {
   background-position: 0px -4224px;
 }
-.sportIcons2x .imgSpr88 {
+.dg_sport_icons_large .imgSpr88 {
   background-position: 0px -4272px;
 }
-.sportIcons2x .imgSpr89 {
+.dg_sport_icons_large .imgSpr89 {
   background-position: 0px -4320px;
 }
-.sportIcons2x .imgSpr90 {
+.dg_sport_icons_large .imgSpr90 {
   background-position: 0px -4368px;
 }
-.sportIcons2x .imgSpr91 {
+.dg_sport_icons_large .imgSpr91 {
   background-position: 0px -4416px;
 }
-.sportIcons2x .imgSpr92 {
+.dg_sport_icons_large .imgSpr92 {
   background-position: 0px -4464px;
 }
-.sportIcons2x .imgSpr93 {
+.dg_sport_icons_large .imgSpr93 {
   background-position: 0px -4512px;
 }
-.sportIcons2x .imgSpr94 {
+.dg_sport_icons_large .imgSpr94 {
   background-position: 0px -4560px;
 }
-.sportIcons2x .imgSpr95 {
+.dg_sport_icons_large .imgSpr95 {
   background-position: 0px -4608px;
 }
-.sportIcons2x .imgSpr96 {
+.dg_sport_icons_large .imgSpr96 {
   background-position: 0px -4656px;
 }
-.sportIcons2x .imgSpr97 {
+.dg_sport_icons_large .imgSpr97 {
   background-position: 0px -4704px;
 }
-.sportIcons2x .imgSpr98 {
+.dg_sport_icons_large .imgSpr98 {
   background-position: 0px -4752px;
 }
-.sportIcons2x .imgSpr99 {
+.dg_sport_icons_large .imgSpr99 {
   background-position: 0px -4800px;
 }
-.sportIcons2x .imgSpr100 {
+.dg_sport_icons_large .imgSpr100 {
   background-position: 0px -4848px;
 }
-.sportIcons2x .imgSpr101 {
+.dg_sport_icons_large .imgSpr101 {
   background-position: 0px -4896px;
 }
-.sportIcons2x .imgSpr102 {
+.dg_sport_icons_large .imgSpr102 {
   background-position: 0px -4944px;
 }
-.sportIcons2x .imgSpr103 {
+.dg_sport_icons_large .imgSpr103 {
   background-position: 0px -4992px;
 }
-.sportIcons2x .imgSpr104 {
+.dg_sport_icons_large .imgSpr104 {
   background-position: 0px -5040px;
 }
-.sportIcons2x .imgSpr105 {
+.dg_sport_icons_large .imgSpr105 {
   background-position: 0px -5088px;
 }
-.sportIcons2x .imgSpr106 {
+.dg_sport_icons_large .imgSpr106 {
   background-position: 0px -5136px;
 }
-.sportIcons2x .imgSpr107 {
+.dg_sport_icons_large .imgSpr107 {
   background-position: 0px -5184px;
 }
-.sportIcons2x .imgSpr108 {
+.dg_sport_icons_large .imgSpr108 {
   background-position: 0px -5232px;
 }
-.sportIcons2x .imgSpr109 {
+.dg_sport_icons_large .imgSpr109 {
   background-position: 0px -5280px;
 }
-.sportIcons2x .imgSpr110 {
+.dg_sport_icons_large .imgSpr110 {
   background-position: 0px -5328px;
 }
-.sportIcons2x .imgSpr111 {
+.dg_sport_icons_large .imgSpr111 {
   background-position: 0px -5376px;
 }
-.sportIcons2x .imgSpr112 {
+.dg_sport_icons_large .imgSpr112 {
   background-position: 0px -5424px;
 }
-.sportIcons2x .imgSpr113 {
+.dg_sport_icons_large .imgSpr113 {
   background-position: 0px -5472px;
 }
-.sportIcons2x .imgSpr116 {
+.dg_sport_icons_large .imgSpr116 {
   background-position: 0px -5616px;
 }
-.sportIcons2x .imgSpr117 {
+.dg_sport_icons_large .imgSpr117 {
   background-position: 0px -5664px;
 }
-/*============ 12 09 2022 ============*/
+/*============ 24 10 2022 ============*/
