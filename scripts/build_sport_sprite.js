@@ -20,9 +20,14 @@ const SPRITE_DEFAULT_ICONST_LENGTH = 1;
 
 const SPRITE_OFFSET = SPRITE_SIZE.h * 20;
 
+const SPRITE_ACTUAL_SIZE_TINYEST = {
+  w: 16,
+  h: 16,
+};
+
 const SPRITE_ACTUAL_SIZE_TINY = {
-  w: 18,
-  h: 18,
+  w: 20,
+  h: 20,
 };
 
 const SPRITE_ACTUAL_SIZE_WEB = {
@@ -163,6 +168,37 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
   for (let k = 0; k < iconsLength; k++) {
     let cssPositionTiny = {
       x: 0,
+      y: k * SPRITE_ACTUAL_SIZE_TINYEST.h,
+    };
+
+    let _k;
+    switch (k - 1) {
+      case -1:
+        _k = "Default";
+        break;
+      case 0:
+        _k = 0;
+        break;
+      default:
+        _k = k - 1;
+        break;
+    }
+
+    let prefix = `.${PREFIX}`;
+    let selectorWeb = `${PREFIX}${_k}`;
+
+    let selectorTiny = `dg_sport_icons_tinyest ${prefix}${_k}`;
+    if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
+      OUTPUT_CSS_CONTENT += createCSSChunk(selectorTiny, cssPositionTiny);
+      OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
+    } else {
+      console.log(k);
+    }
+  }
+
+  for (let k = 0; k < iconsLength; k++) {
+    let cssPositionTiny = {
+      x: 0,
       y: k * SPRITE_ACTUAL_SIZE_TINY.h,
     };
 
@@ -182,7 +218,7 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
     let prefix = `.${PREFIX}`;
     let selectorWeb = `${PREFIX}${_k}`;
 
-    let selectorTiny = `tg_sport_icons_tiny ${prefix}${_k}`;
+    let selectorTiny = `dg_sport_icons_tiny ${prefix}${_k}`;
     if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
       OUTPUT_CSS_CONTENT += createCSSChunk(selectorTiny, cssPositionTiny);
       OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
@@ -239,7 +275,7 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
     let prefix = `.${PREFIX}`;
     let selectorWeb = `${PREFIX}${_k}`;
 
-    let selectorMob = `sportIcons2x ${prefix}${_k}`;
+    let selectorMob = `dg_sport_icons_large ${prefix}${_k}`;
     if (!(k >= emptyStartIndex && k <= emptyEndIndex)) {
       OUTPUT_CSS_CONTENT += createCSSChunk(selectorMob, cssPositionMob);
       OUTPUT_HTML_CONTENT_MOB_WRAPPER += createHTMLChunk(selectorWeb);
