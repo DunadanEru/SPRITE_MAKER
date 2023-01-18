@@ -8,8 +8,8 @@ const createDate = require("./utils/createDate");
 
 const OUTPUT_DIR = "dist/SPORT_ICONS";
 
-const INPUTT_DIR = "src/SPORT_ICONS";
-const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
+const INPUT_DIR = "src/SPORT_ICONS";
+const INPUT_DIR_FILES_TO_ADD = `${INPUT_DIR}/add/`;
 const BRIGHTNESS_MULT = 1.6;
 const PREFIX = "imgSpr";
 const SPRITE_SIZE = {
@@ -118,7 +118,7 @@ let OUTPUT_HTML_CONTENT_END = `
 </html>
 `;
 
-let FILES = fs.readdirSync(INPUTT_DIR_FILES_TO_ADD);
+let FILES = fs.readdirSync(INPUT_DIR_FILES_TO_ADD);
 let FILES_LENGTH = FILES.length;
 
 const OUTPUT_FILE = fs.createWriteStream(OUTPUT_IMAGE_FILE_PATH);
@@ -130,7 +130,7 @@ function prepareSprite(img, ctx, pos) {
   ctx.drawImage(img, _p.x, _p.y, SPRITE_SIZE.w, SPRITE_SIZE.h);
 }
 
-loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
+loadImage(`${INPUT_DIR}/sportIcons.png`).then((image) => {
   let newSpriteEndIndex = FILES[FILES.length - 1].split(".")[0];
   let newSpriteStartIndex = FILES[0].split(".")[0];
 
@@ -149,7 +149,7 @@ loadImage(`${INPUTT_DIR}/sportIcons.png`).then((image) => {
   CTX.drawImage(image, 0, 0, image.width, image.height);
 
   FILES.forEach((file, i) => {
-    loadImage(`${INPUTT_DIR_FILES_TO_ADD}/${file}`).then((_imagePart) => {
+    loadImage(`${INPUT_DIR_FILES_TO_ADD}/${file}`).then((_imagePart) => {
       let fileName = Number(file.split(".")[0]);
 
       let position = {

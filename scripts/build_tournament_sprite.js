@@ -7,8 +7,8 @@ const createDate = require("./utils/createDate");
 // https://github.com/Automattic/node-canvas
 
 const OUTPUT_DIR = "dist/TOURNAMENTS";
-const INPUTT_DIR = "src/TOURNAMENTS";
-const INPUTT_DIR_FILES_TO_ADD = `${INPUTT_DIR}/add/`;
+const INPUT_DIR = "src/TOURNAMENTS";
+const INPUT_DIR_FILES_TO_ADD = `${INPUT_DIR}/add/`;
 const BRIGHTNESS_MULT = 1.4;
 const PREFIX = "digi_tournament_";
 const SPRITE_SIZE = {
@@ -77,7 +77,7 @@ let OUTPUT_HTML_END = `</main>
 </body>
 </html>`;
 
-let FILES = fs.readdirSync(INPUTT_DIR_FILES_TO_ADD);
+let FILES = fs.readdirSync(INPUT_DIR_FILES_TO_ADD);
 let FILES_LENGTH = FILES.length;
 
 const OUTPUT_FILE = fs.createWriteStream(`${OUTPUT_IMAGE_FILE_PATH}`);
@@ -110,7 +110,7 @@ function prepareSprite(img, ctx, pos, light) {
   }
 }
 
-loadImage(`${INPUTT_DIR}/spriteTournament.png`).then((image) => {
+loadImage(`${INPUT_DIR}/spriteTournament.png`).then((image) => {
   const CW = image.width;
   const CH = image.height + SPRITE_SIZE.h * FILES_LENGTH;
   const SPRITE_WIDTH = image.width;
@@ -121,7 +121,7 @@ loadImage(`${INPUTT_DIR}/spriteTournament.png`).then((image) => {
   CTX.drawImage(image, 0, 0, image.width, image.height);
 
   FILES.forEach((file, i) => {
-    loadImage(`${INPUTT_DIR_FILES_TO_ADD}/${file}`)
+    loadImage(`${INPUT_DIR_FILES_TO_ADD}/${file}`)
       .then((image) => {
         for (let g = 0; g < STEP_X; g++) {
           let position = {
