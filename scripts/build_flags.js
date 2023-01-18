@@ -8,7 +8,7 @@ const createDate = require("./utils/createDate");
 const FOLDER = `FLAGS`;
 
 const OUTPUT_DIR = `dist/${FOLDER}`;
-const INPUTT_DIR = `src/${FOLDER}`;
+const INPUT_DIR = `src/${FOLDER}`;
 const BRIGHTNESS_MULT = 2.5;
 const PREFIX = "digi_flag_";
 const SPRITE_SIZE = {
@@ -60,7 +60,7 @@ let OUTPUT_HTML_END = `</main>
 </body>
 </html>`;
 
-let FILES = fs.readdirSync(INPUTT_DIR_FILES_TO_ADD);
+let FILES = fs.readdirSync(INPUT_DIR_FILES_TO_ADD);
 let FILES_LENGTH = FILES.length;
 
 const OUTPUT_FILE = fs.createWriteStream(`${OUTPUT_IMAGE_FILE_PATH}`);
@@ -70,7 +70,7 @@ function prepareSprite(img, ctx, pos, light) {
   ctx.drawImage(img, _p.x, _p.y, SPRITE_SIZE.w, SPRITE_SIZE.h);
 }
 
-loadImage(`${INPUTT_DIR}/flags.png`).then((image) => {
+loadImage(`${INPUT_DIR}/flags.png`).then((image) => {
   const CW = image.width;
   const CH = image.height + SPRITE_SIZE.h * FILES_LENGTH;
 
