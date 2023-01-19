@@ -1,18 +1,18 @@
 const fs = require("fs");
 const { createCanvas, loadImage, createImageData } = require("canvas");
 
-const FOLDER = `OPTIMISE`;
+const FOLDER = `OPTIMIZE`;
 const OUTPUT_DIR = `dist/${FOLDER}D`;
-const INPUTT_DIR = `src/${FOLDER}`;
+const INPUT_DIR = `src/${FOLDER}`;
 const IMAGE_SIZE = {
   w: 40,
   h: 40,
 };
 
-let FILES = fs.readdirSync(INPUTT_DIR);
+let FILES = fs.readdirSync(INPUT_DIR);
 
 function writeFile(file) {
-  let srcFilePath = `${INPUTT_DIR}/${file}`;
+  let srcFilePath = `${INPUT_DIR}/${file}`;
   let CANVAS = createCanvas(IMAGE_SIZE.w, IMAGE_SIZE.w);
   let CTX = CANVAS.getContext("2d");
   // 'fast'|'good'|'best'|'nearest'|'bilinear'
